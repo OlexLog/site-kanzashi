@@ -1,0 +1,27 @@
+.kanzashi {
+	margin-bottom: 60px;
+
+	&__title {
+		text-align: center;
+		font-size: 40px;
+		margin-bottom: 32px;
+	}
+
+	&__text {
+		margin-bottom: 60px;
+	}
+
+	&__slider {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+	}
+
+	&__container {
+		overflow: hidden;
+	}
+
+	&i__list {
+		margin-bottom: 32px;
+	}
+}

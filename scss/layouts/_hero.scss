@@ -1,0 +1,50 @@
+.hero {
+	width: 100%;
+	padding: 179px 0 401px 0;
+	background-image: url('/images/fon_start.jpg');
+	max-height: 700px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+
+	&__menu {
+		display: none;
+
+		@media screen and (min-width: $br--smalldesktop) {
+			display: flex;
+			gap: 29px;
+			justify-content: space-between;
+			background: var(--color-primary-clear);
+			width: 100%;
+			padding: 32px 48px;
+		}
+
+	}
+
+	&__text--title {
+		display: flex;
+		justify-content: flex-end;
+		color: var(--color-primary-normal);
+		text-align: center;
+		font-size: 96px;
+		font-weight: 700;
+		margin-bottom: 24px;
+	}
+
+	&__text--subtitle {
+		display: flex;
+		justify-content: flex-start;
+		color: var(--color-primary-dark);
+		font-size: 80px;
+		margin-bottom: 32px;
+	}
+
+	&__button {
+		display: none;
+
+		@media screen and (min-width: $br--tablet) {
+			display: block;
+		}
+	}
+
+}

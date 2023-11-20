@@ -1,0 +1,36 @@
+.header-section {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__menu {
+		display: none;
+
+		@media screen and (min-width: $br--smalldesktop) {
+			display: flex;
+			gap: 64px;
+			justify-content: space-between;
+			padding: 24px 48px;
+			background: var(--color-primary-clear);
+		}
+	}
+
+	&__burger {
+		position: absolute;
+		font-family: "Poppins";
+		font-size: 16px;
+		top: 24px;
+		right: 24px;
+
+		@media screen and (min-width: $br--tablet) {
+			display: none;
+		}
+
+	}
+}
