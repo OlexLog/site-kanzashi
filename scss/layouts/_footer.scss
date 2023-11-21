@@ -1,58 +1,70 @@
 .footer {
-  background-image: url('/images/fon_footer.jpg');
-  max-height: 160px;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+	background-image: url('/images/fon_footer.jpg');
+	max-height: 160px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
 
-  &__container {
-    display: flex;
-    justify-content: space-around;
-    gap: 48px;
-    background: var(--color-primary-clear);
-    padding-top: 16px;
-  }
+	&__container {
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+		background: var(--color-primary-clear);
+		padding: 15px;
+		font-size: 14px;
 
-  &__address {
-    display: flex;
-    justify-content: center;
-  }
+	}
 
-  &__item {
-    margin-bottom: 16px;
-    color: var(--color-primary-dark);
-    font-size: 16px;
-  }
+	&__address {
+		display: flex;
+		justify-content: center;
+	}
 
-  &__contacts {
-    display: flex;
-    gap: 100px;
-  }
+	&__item {
+		margin-bottom: 16px;
+		color: var(--color-primary-dark);
+		font-size: 16px;
+	}
 
-  &__address-copyright {
-    margin-top: 16px;
-  }
+	&__contacts {
+		display: flex;
+		gap: 100px;
+	}
 
-  &__address-item {
-    display: flex;
-    gap: 30px;
-  }
+	&__address-copyright {
+		margin-top: 16px;
+	}
 
-  &__address-link {
-    color: var(--color-primary-dark);
-  }
+	&__address-item {
+		display: flex;
+		gap: 30px;
+	}
 
-  &__address-link:hover {
-    color: var(--color-primary-normal);
-  }
+	&__address-link {
+		color: var(--color-primary-dark);
+	}
 
-  &__address-item--tel {
-    display: flex;
-    gap: 54px;
-  }
+	&__address-link:hover {
+		color: var(--color-primary-normal);
+	}
 
-  &__socials-icon {
-    margin-right: 22px;
-    background: var(--color-primary-normal);
-  }
+	&__address-item--tel {
+		display: flex;
+		gap: 54px;
+	}
+
+	&__socials-icon {
+		margin-right: 22px;
+		background: var(--color-primary-normal);
+	}
+
+	@media screen and (min-width: $br--smalldesktop) {
+		&__container {
+			justify-content: space-around;
+			gap: 48px;
+			font-size: 16px;
+			padding-top: 16px;
+		}
+
+	}
 }

@@ -1,11 +1,30 @@
 .hero {
 	width: 100%;
-	padding: 179px 0 401px 0;
+	padding: 59px 0 51px 0;
 	background-image: url('/images/fon_start.jpg');
 	max-height: 700px;
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
+
+
+	@media screen and (min-width: $br--smalldesktop) {
+		padding: 179px 0 401px 0;
+	}
+
+	@media screen and (min-width: $br--tablet) {
+		padding: 159px 0 351px 0;
+	}
+
+	@media screen and (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		background-image: url('/images/fon_start@2x.jpg');
+
+	}
+
+
+
 
 	&__menu {
 		display: none;
@@ -23,27 +42,34 @@
 
 	&__text--title {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-around;
 		color: var(--color-primary-normal);
 		text-align: center;
-		font-size: 96px;
-		font-weight: 700;
 		margin-bottom: 24px;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 1;
+
+		@media screen and (min-width: $br--smalldesktop) {
+			font-size: 96px;
+			line-height: 1.5;
+			justify-content: flex-end;
+		}
 	}
+
 
 	&__text--subtitle {
 		display: flex;
-		justify-content: flex-start;
+		justify-content: space-around;
 		color: var(--color-primary-dark);
-		font-size: 80px;
+		font-size: 40px;
 		margin-bottom: 32px;
-	}
+		line-height: 1;
 
-	&__button {
-		display: none;
-
-		@media screen and (min-width: $br--tablet) {
-			display: block;
+		@media screen and (min-width: $br--smalldesktop) {
+			font-size: 80px;
+			line-height: 1.5;
+			justify-content: flex-start;
 		}
 	}
 
