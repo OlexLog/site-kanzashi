@@ -1,55 +1,47 @@
-.button {
-	font-family: 'Poppins';
+* .button {
+	background: #E77D24;
+	justify-content: center;
+	color: var(--color-primary-normal);
+	text-align: center;
+	font-family: Poppins;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 600;
-	line-height: 1;
-	border-radius: 8px;
-	background: var(--color-secondary-btn);
-	color: var(--color-primary-normal);
-	display: inline-flex;
-	width: 197px;
-	height: 44px;
-	padding: 8px 16px;
-	justify-content: center;
+	line-height: 1.5;
 	border: none;
-	margin: 0 auto;
-	margin-bottom: 57px;
+}
 
-	@media screen and (min-width: $br--tablet) {
-		line-height: 1.5;
-		width: 287px;
-		height: 56px;
+.modal__button {
+	& {
+		display: block;
 		padding: 16px 32px;
-		justify-content: center;
-		border: none;
-		margin-left: 106px;
-		font-size: 16px;
-
+		margin: 0 auto 24px;
+		border-radius: 16px;
+		width: 374px;
+		height: 86px;
+		cursor: pointer;
+		font-size: 36px;
 	}
 
-
 	&:hover {
-		color: var(--color-primary-dark);
 		background-color: transparent;
-		border: 1px solid var(--color-primary-dark);
+		border: 1px solid var(--color-secondary-dark);
 	}
 }
 
-/* Modal button */
 
-.modal__button {
-	display: block;
-	padding: 16px 32px;
-	color: var(--color-secondary-normal);
-	font-weight: 600;
-	margin: 0 auto 24px;
-	background-color: var(--color-secondary-btn);
-	border: 1px solid var(--color-secondary-dark);
-	border-radius: 8px;
-	cursor: pointer;
+.hero-section {
+	&__button {
+		border-radius: 16px;
+		width: 282px;
+		padding: 16px 32px;
+		margin-left: 114px;
+		margin-bottom: 80px;
+	}
 
-	&:hover {
+	&__button:hover {
 		background-color: transparent;
+		border: 1px solid var(--color-primary-dark);
+		cursor: pointer;
 	}
 }

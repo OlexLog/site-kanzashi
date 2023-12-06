@@ -1,0 +1,28 @@
+.header-section {
+	& {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 24px 0;
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	&__nav {
+		display: flex;
+		flex-direction: row;
+		gap: 100px;
+		align-items: center;
+	}
+
+	&__menu {
+		display: flex;
+		gap: 50px;
+
+	}
+}

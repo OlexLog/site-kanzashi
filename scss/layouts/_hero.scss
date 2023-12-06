@@ -1,43 +1,15 @@
-.hero {
+.hero-section {
 	width: 100%;
-	padding: 59px 0 51px 0;
+	padding: 190px 0 20px 0;
 	background-image: url('/images/fon_start.jpg');
-	max-height: 700px;
+	max-height: 692px;
 	background-repeat: no-repeat;
-	background-position: top center;
 	background-size: cover;
+	text-align: center;
 
-
-	@media screen and (min-width: $br--smalldesktop) {
-		padding: 179px 0 401px 0;
-	}
-
-	@media screen and (min-width: $br--tablet) {
-		padding: 159px 0 351px 0;
-	}
-
-	@media screen and (min-device-pixel-ratio: 2),
-	(min-resolution: 192dpi),
-	(min-resolution: 2dppx) {
-		background-image: url('/images/fon_start@2x.jpg');
-
-	}
-
-
-
-
-	&__menu {
-		display: none;
-
-		@media screen and (min-width: $br--smalldesktop) {
-			display: flex;
-			gap: 29px;
-			justify-content: space-between;
-			background: var(--color-primary-clear);
-			width: 100%;
-			padding: 32px 48px;
-		}
-
+	&__container {
+		padding: 0;
+		flex-wrap: nowrap;
 	}
 
 	&__text--title {
@@ -45,32 +17,64 @@
 		justify-content: space-around;
 		color: var(--color-primary-normal);
 		text-align: center;
-		margin-bottom: 24px;
-		font-size: 48px;
+		font-size: 30px;
 		font-weight: 700;
 		line-height: 1;
 
-		@media screen and (min-width: $br--smalldesktop) {
-			font-size: 96px;
-			line-height: 1.5;
-			justify-content: flex-end;
-		}
 	}
-
 
 	&__text--subtitle {
 		display: flex;
 		justify-content: space-around;
 		color: var(--color-primary-dark);
-		font-size: 40px;
-		margin-bottom: 32px;
+		font-size: 24px;
+		margin-bottom: 16px;
+		font-weight: 700;
 		line-height: 1;
+	}
 
-		@media screen and (min-width: $br--smalldesktop) {
-			font-size: 80px;
-			line-height: 1.5;
-			justify-content: flex-start;
+	@media screen and (min-width: $br--mobile) {
+		& {
+			padding: 130px 0 20px 0;
+			text-align: left;
+		}
+
+	}
+
+	@media screen and (min-width: $br--tablet) {
+		& {
+			padding: 130px 0 40px;
+
+		}
+
+		&__container {
+			background: var(--color-primary-clear);
+
+		}
+
+		&__text--subtitle {
+			margin-bottom: 32px;
 		}
 	}
 
+	@media screen and (min-width: $br--smalldesktop) {
+		&__text--subtitle {
+			font-size: 80px;
+			line-height: 1.5;
+			justify-content: center;
+		}
+
+		&__text--title {
+			font-size: 96px;
+			line-height: 1.5;
+			font-weight: 900;
+			justify-content: center;
+			padding-bottom: 60px;
+
+		}
+
+		&__container {
+			padding: 0;
+		}
+	}
 }

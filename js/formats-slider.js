@@ -1,13 +1,16 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.kanzashi__container', {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 20,
   breakpoints: {
-    768: {
+    480: {
       slidesPerView: 2,
     },
-    1280: {
+    768: {
       slidesPerView: 3,
+    },
+    1280: {
+      slidesPerView: 4,
     },
   },
   pagination: {

@@ -1,0 +1,21 @@
+.link {
+	color: var(--color-primary-dark);
+	text-decoration: none;
+	transition: color 0.3s;
+
+	&:hover {
+		color: var(--color-primary-normal);
+	}
+
+	&--nav {
+		color: var(--color-primary-dark);
+		text-decoration: none;
+		transition: color 0.3s;
+
+
+		&:hover {
+			color: var(--color-primary-light);
+		}
+	}
+
+}

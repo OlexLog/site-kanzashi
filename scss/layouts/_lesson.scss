@@ -1,0 +1,28 @@
+.lesson {
+	padding: 40px 0;
+	background-color: var(--color-fon-lesson);
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__subtitle {
+		font-size: 36px;
+		margin-bottom: 40px;
+	}
+
+
+	&__text {
+		text-align: justify;
+		margin-bottom: 40px;
+		padding: 0 109px;
+	}
+
+	&__video {
+		width: 550px;
+		height: 318px;
+		object-fit: cover;
+	}
+}
