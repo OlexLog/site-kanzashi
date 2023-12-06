@@ -4,28 +4,61 @@
 
 	&__container {
 		display: flex;
-		flex-direction: row-reverse;
-		gap: 59px;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
 	}
 
 	&__title {
 		text-align: center;
-		font-size: 40px;
+		font-size: 20px;
 		margin-bottom: 8px;
 	}
 
 	&__text {
 		margin-bottom: 4px;
 		text-align: justify;
+		height: 200px;
+		overflow-y: scroll;
+
 	}
 
 	&__menu {
 		list-style-type: inherit;
 		margin-left: 52px;
+
 	}
 
 	&__image {
 		border-radius: 16px;
+		margin: 0 auto;
+	}
+
+	@media screen and (min-width: $br--mobile) {
+		&__text {
+			overflow-y: hidden;
+			height: auto;
+		}
+
+		&__title {
+			font-size: 40px;
+		}
+
+	}
+
+	@media screen and (min-width: $br--smalldesktop) {
+		&__container {
+			flex-direction: row-reverse;
+			gap: 59px;
+		}
+
+
+		&__image {
+			border-radius: 16px;
+			margin: 0;
+		}
+
+
 	}
 
 }

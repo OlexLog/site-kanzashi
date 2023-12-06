@@ -9,20 +9,41 @@
 	}
 
 	&__subtitle {
-		font-size: 36px;
-		margin-bottom: 40px;
+		font-size: 18px;
+		margin-bottom: 20px;
 	}
 
 
 	&__text {
 		text-align: justify;
-		margin-bottom: 40px;
-		padding: 0 109px;
+		margin-bottom: 20px;
+		padding: 0;
+		overflow-y: scroll;
+		height: 200px;
 	}
 
 	&__video {
-		width: 550px;
-		height: 318px;
+		width: 225px;
+		height: 159px;
 		object-fit: cover;
+	}
+
+	@media screen and (min-width: $br--tablet) {
+		&__subtitle {
+			font-size: 36px;
+			margin-bottom: 40px;
+		}
+
+		&__video {
+			width: 550px;
+			height: 318px;
+		}
+
+		&__text {
+			margin-bottom: 40px;
+			padding: 0 109px;
+			overflow-y: hidden;
+			height: auto;
+		}
 	}
 }

@@ -4,8 +4,9 @@
 
 	&__container {
 		display: flex;
-		flex-direction: row-reverse;
-		gap: 50px;
+		flex-direction: column-reverse;
+		gap: 20px;
+
 	}
 
 	&__content {
@@ -13,16 +14,45 @@
 	}
 
 	&__title {
-		font-size: 40px;
-		margin-bottom: 40px;
+		font-size: 20px;
+		margin-bottom: 20px;
+		text-align: center;
 	}
 
 	&__text {
 		text-align: justify;
-		
+		overflow-y: scroll;
+		height: 200px;
+
 	}
 
 	&__image {
 		border-radius: 16px;
+		margin: 0 auto;
+	}
+
+	@media screen and (min-width: $br--mobile) {
+		&__text {
+			overflow-y: hidden;
+			height: auto;
+		}
+
+		&__title {
+			font-size: 40px;
+			margin-bottom: 40px;
+		}
+
+	}
+
+	@media screen and (min-width: $br--smalldesktop) {
+		&__container {
+			flex-direction: row-reverse;
+			gap: 50px;
+		}
+
+		&__image {
+			margin: 0;
+		}
+
 	}
 }

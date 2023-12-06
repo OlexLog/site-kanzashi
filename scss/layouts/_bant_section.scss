@@ -1,18 +1,20 @@
 .bant-section {
-	padding: 40px 0;
+	& {
+		padding: 40px 0;
+	}
 
 	&__wrapper {
 		display: flex;
 		gap: 20px 40px;
-		justify-content: space-between;
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	&__title {
 		text-align: left;
 		color: var(--color-primary-dark);
-		font-size: 64px;
-		margin-bottom: 40px;
+		font-size: 32px;
+		margin-bottom: 20px;
 	}
 
 	&__card {
@@ -22,7 +24,7 @@
 		background: var(--color-secondary-normal);
 		padding: 8px;
 		border-radius: 16px;
-		
+
 	}
 
 	&__container {
@@ -88,7 +90,13 @@
 			border: 1px solid var(--color-primary-dark);
 		}
 
-
-
 	}
+
+	@media screen and (min-width: $br--tablet) {
+		&__title {
+			font-size: 64px;
+			margin-bottom: 40px;
+		}
+	}
+
 }

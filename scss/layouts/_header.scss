@@ -4,7 +4,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		padding: 24px 0;
+		padding: 0;
 	}
 
 	&__container {
@@ -13,16 +13,32 @@
 		justify-content: space-evenly;
 	}
 
-	&__nav {
-		display: flex;
-		flex-direction: row;
-		gap: 100px;
-		align-items: center;
-	}
+
 
 	&__menu {
 		display: flex;
-		gap: 50px;
+		flex-direction: column;
+		gap: 10px;
+
+	}
+
+	@media screen and (min-width: $br--tablet) {
+		& {
+			padding: 24px 0;
+		}
+
+		&__menu {
+			flex-direction: row;
+
+		}
+
+	}
+
+	@media screen and (min-width: $br--smalldesktop) {
+		&__menu {
+			gap: 50px;
+
+		}
 
 	}
 }

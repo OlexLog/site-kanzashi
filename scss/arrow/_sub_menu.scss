@@ -1,7 +1,7 @@
 .sub-menu {
 	&__list {
 		display: none;
-		min-width: 280px;
+		min-width: 240px;
 		position: absolute;
 		left: 0;
 		top: 16px;
@@ -16,7 +16,7 @@
 	&__link {
 		color: #000;
 		display: inline-block;
-		padding: 5px;
+		padding: 0;
 
 
 		&:hover {
@@ -38,6 +38,17 @@
 		border-right: none;
 		border-top: 10px solid transparent;
 		border-bottom: 10px solid transparent;
+	}
+
+
+	@media (min-width:$br--tablet) {
+		&__list {
+			min-width: 280px;
+		}
+
+		&__link {
+			padding: 5px;
+		}
 	}
 
 	@media (max-width:$br--tablet) {
