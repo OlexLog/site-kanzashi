@@ -1,0 +1,18 @@
+.arrow {
+	& {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 12px;
+		width: 0;
+		height: 0;
+		border-top: 10px solid var(--color-primary-dark);
+		border-right: 10px solid transparent;
+		border-left: 10px solid transparent;
+	}
+
+	&.active {
+		transform: rotate(-180deg);
+	}
+
+}

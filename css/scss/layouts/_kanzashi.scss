@@ -1,0 +1,51 @@
+.kanzashi {
+	padding-top: clamp(10px, 3vw, 40px);
+	padding-bottom: clamp(10px, 3vw, 40px);
+	background-color: var(--color-fon-kanzashi);
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	&__container {
+		overflow: hidden;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: clamp(14px, 4vw, 40px);
+		margin-bottom: clamp(10px, 3vw, 40px);
+	}
+
+	&__text {
+		text-align: justify;
+		padding-left: clamp(5px, 3vw, 109px);
+		padding-right: clamp(5px, 3vw, 109px);
+		margin-bottom: clamp(10px, 3vw, 40px);
+		height: 200px;
+		overflow-y: scroll;
+		font-size: clamp(12px, 2vw, 14px);
+
+
+	}
+
+	&__slider {
+		display: flex;
+		align-items: center;
+		gap: clamp(8px, 4vw, 32px);
+	}
+
+	&__list {
+		margin-bottom: clamp(10px, 3vw, 32px);
+	}
+
+	@media screen and (min-width: $br--tablet) {
+
+		&__text {
+			height: auto;
+			overflow-y: hidden;
+		}
+	}
+}

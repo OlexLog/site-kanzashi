@@ -1,0 +1,79 @@
+.hero-section {
+	& {
+		margin: 0;
+		width: 100%;
+		padding-top: clamp(130px, 50%, 190px);
+		padding-bottom: 20px;
+		background-image: url('/images/fon_start.jpg');
+		max-height: 692px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+	&__container {
+		padding: 0;
+		flex-wrap: nowrap;
+	}
+
+	&__text--title {
+		display: flex;
+		justify-content: center;
+		color: var(--color-primary-normal);
+		text-align: center;
+		font-size: clamp(20px, 8vw, 96px);
+		font-weight: 900;
+		line-height: 1;
+		padding-bottom: clamp(20px, 5vw, 60px);
+		text-shadow: 8px -8px 6px var(--color-primary-dark);
+		letter-spacing: 8px;
+
+	}
+
+	&__text--subtitle {
+		display: flex;
+		justify-content: center;
+		color: var(--color-primary-dark);
+		font-size: clamp(20px, 7vw, 80px);
+		margin-bottom: clamp(16px, 3vw, 32px);
+		font-weight: 700;
+		line-height: 1;
+		text-shadow: 6px -3px 2px var(--color-primary-normal);
+		letter-spacing: 4px;
+	}
+
+	@media screen and (min-width: $br--mobile) {
+		& {
+			text-align: left;
+		}
+
+	}
+
+	@media screen and (min-width: $br--tablet) {
+		& {
+			padding-bottom: 0;
+
+		}
+
+		&__container {
+			background: var(--color-primary-clear);
+
+		}
+	}
+
+	@media screen and (min-width: $br--smalldesktop) {
+		&__text--subtitle {
+			line-height: 1.5;
+
+		}
+
+		&__text--title {
+			line-height: 1.5;
+			font-weight: 900;
+		}
+
+		&__container {
+			padding: 0;
+		}
+	}
+}

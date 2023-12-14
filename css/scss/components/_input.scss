@@ -1,0 +1,41 @@
+.input {
+	position: relative;
+
+	&__label {
+		position: absolute;
+		top: 16px;
+		left: 32px;
+
+		& body {
+			font-family: 'Poppins', sans-serif;
+		}
+	}
+
+	&__control {
+		padding: 16px 32px;
+		width: 100%;
+		font-size: clamp(14px, 3vw, 20px);
+		line-height: 1.5;
+		fill: var(--color-secondary-normal);
+		border: 1px solid var(--color-secondary-dark);
+		border-radius: 16px;
+		background-color: transparent;
+	}
+
+	&__control:focus {
+		background-color: var(--color-secondary-light);
+		color: var(--color-secondary-n);
+		outline: none;
+	}
+
+	&::placeholder {
+		color: var(--color-secondary-normal);
+		font-size: clamp(14px, 3vw, 20px);
+		line-height: 1.5;
+		font-weight: bold;
+	}
+
+	&:focus::placeholder {
+		color: var(--color-primary-dark);
+	}
+}

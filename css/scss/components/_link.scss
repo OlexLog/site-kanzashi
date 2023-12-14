@@ -1,0 +1,42 @@
+.link {
+	color: var(--color-primary-dark);
+	text-decoration: none;
+	transition: color 0.3s;
+
+	&:hover {
+		color: var(--color-primary-normal);
+	}
+
+	&--nav {
+		color: var(--color-primary-dark);
+		text-decoration: none;
+		transition: color 0.3s;
+		padding: 10px;
+
+		&:hover {
+			color: var(--color-primary-light);
+		}
+	}
+
+
+	@media screen and (min-width: $br--mobile) {
+		&--nav {
+			padding: 5px;
+		}
+	}
+
+
+	@media screen and (min-width: $br--tablet) {
+		&--nav {
+				padding: 0;
+			}
+	}
+
+	@media screen and (min-width: $br--smalldesktop) {
+	&--nav {
+			padding: 5px;
+		}
+
+	}
+
+}

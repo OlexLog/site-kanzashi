@@ -1,0 +1,45 @@
+.lesson {
+	padding-top: clamp(10px, 3vw, 40px);
+	padding-bottom: clamp(10px, 3vw, 40px);
+	background-color: var(--color-fon-lesson);
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__subtitle {
+		font-size: clamp(14px, 4vw, 36px);
+		margin-bottom: clamp(10px, 3vw, 40px);
+	}
+
+
+	&__text {
+		text-align: justify;
+		margin-bottom: clamp(10px, 3vw, 40px);
+		padding-left: clamp(5px, 3vw, 109px);
+		padding-right: clamp(5px, 3vw, 109px);
+		overflow-y: scroll;
+		height: 200px;
+		font-size: clamp(12px, 2vw, 14px);
+	}
+
+	&__video {
+		width: 225px;
+		height: 159px;
+		object-fit: cover;
+	}
+
+	@media screen and (min-width: $br--tablet) {
+		&__video {
+			width: 550px;
+			height: 318px;
+		}
+
+		&__text {
+			overflow-y: hidden;
+			height: auto;
+		}
+	}
+}

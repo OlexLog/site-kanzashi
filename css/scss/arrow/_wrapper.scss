@@ -1,0 +1,15 @@
+.wrapper {
+	& {
+		height: 100%;
+		min-width: 150px;
+		padding: 8px;
+		
+	}
+
+	@media (min-width:$br--tablet) {
+		& {
+			padding: 15px;
+		}
+
+	}
+}

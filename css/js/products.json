@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "title": "Бант 'Новорічний'",
+    "itemsInBox": 6,
+    "price": 50,
+    "imgSrc": "bant1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Бант 'Шкільний'",
+    "itemsInBox": 6,
+    "price": 50,
+    "imgSrc": "bant2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Бант 'Горошок'",
+    "itemsInBox": 6,
+    "price": 50,
+    "imgSrc": "bant3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Бант '1 вересня'",
+    "itemsInBox": 6,
+    "price": 50,
+    "imgSrc": "bant4.jpg"
+  },
+
+  {
+    "id": 5,
+    "title": "Бант 'Нічне сяйво'",
+    "itemsInBox": 6,
+    "price": 50,
+    "imgSrc": "bant5.jpg"
+  },
+
+  {
+    "id": 6,
+    "title": "Бант 'Різдвяний'",
+    "itemsInBox": 6,
+    "price": 50,
+    "imgSrc": "bant6.jpg"
+  },
+
+  {
+    "id": 7,
+    "title": "Бант 'Слоненятко'",
+    "itemsInBox": 6,
+    "price": 50,
+    "imgSrc": "bant7.jpg"
+  },
+
+  {
+    "id": 8,
+    "title": "Бант 'Метелик'",
+    "itemsInBox": 6,
+    "price": 50,
+    "imgSrc": "bant8.jpg"
+  },
+
+  {
+    "id": 9,
+    "title": "Бант 'Красуня'",
+    "itemsInBox": 6,
+    "price": 50,
+    "imgSrc": "bant9.jpg"
+  },
+
+  {
+    "id": 10,
+    "title": "Бант 'Бриз'",
+    "itemsInBox": 6,
+    "price": 50,
+    "imgSrc": "bant10.jpg"
+  },
+
+  {
+    "id": 11,
+    "title": "Бант 'Візерунок'",
+    "itemsInBox": 6,
+    "price": 50,
+    "imgSrc": "bant11.jpg"
+  },
+
+  {
+    "id": 12,
+    "title": "Бант 'Квітка'",
+    "itemsInBox": 6,
+    "price": 50,
+    "imgSrc": "bant12.jpg"
+  }
+]

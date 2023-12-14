@@ -1,0 +1,19 @@
+body.mouse .menu__list>li:hover .sub-menu__list {
+	display: block;
+}
+
+body.mouse .sub-menu__list>li:hover .sub-sub-menu__list {
+	display: block;
+}
+
+body.touch .sub-menu__list.open {
+	display: block;
+}
+
+body.touch .sub-sub-menu__list.open {
+	display: block;
+}
+
+body.touch .arrow {
+	display: block;
+}

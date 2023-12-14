@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Банти</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="./css/main.min.css">
+
+
+</head>
+
+<body>
+
+	<!-- Навігація сайту у шапці -->
+	<header class="header-section">
+		<div class="container">
+			<div class="header-section__container">
+				<div class="wrapper">
+					<nav class="header-section__nav">
+						<div class="header-section__menu menu">
+							<ul class="menu__list--nav">
+								<li><a class="link--nav" href="/index.html">Головна</a> </li>
+								<li><a class="link--nav" href="#footer">Контакти</a></li>
+							</ul>
+							<ul class="menu__list">
+								<li>
+									<a href="" class="menu__link">Каталог продукції</a>
+									<span class="menu__arrow arrow"></span>
+									<ul class="sub-menu__list">
+										<li>
+											<a href="./bant.html#bant" class="sub-menu__link">Банти</a>
+										</li>
+										<li>
+											<a href="" class="sub-menu__link">Гумки</a>
+										</li>
+										<li>
+											<a href="" class="sub-menu__link">Обручі</a>
+										</li>
+										<li>
+											<a href="" class="sub-menu__link">Заколки</a>
+										</li>
+										<li>
+											<a href="" class="sub-menu__link">Кроватки</a>
+										</li>
+										<li>
+											<a href="" class="sub-menu__link">Прикраси на гульку</a>
+										</li>
+										<li>
+											<a href="" class="sub-menu__link">Букети на замовлення</a>
+										</li>
+										<li>
+											<a href="" class="sub-menu__link">Українська тематика</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="" class="menu__link">Історія канзаші</a>
+									<span class="menu__arrow arrow"></span>
+									<ul class="sub-menu__list">
+										<li>
+											<a href="/index.html#traditions" class="sub-menu__link">Що таке канзаші?</a>
+										</li>
+										<li>
+											<a href="/index.html#correctly" class="sub-menu__link">Як правильно носити?</a>
+										</li>
+										<li>
+											<a href="/index.html#manufacture" class="sub-menu__link">З чого мають
+												виготовляти?</a>
+										</li>
+										<li>
+											<a href="/index.html#kanzashi" class="sub-menu__link">Якими бувають канзаші?</a>
+										</li>
+										<li>
+											<a href="/index.html#masterclass" class="sub-menu__link">Майстер клас</a>
+										</li>
+										<li>
+											<a href="/index.html#lesson" class="sub-menu__link">Як зробити канзаші?</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+
+				</div>
+			</div>
+		</div>
+		</div>
+	</header>
+	<main>
+		<!-- Назва сайту та перехід на інші сторінки-->
+		<section class="hero-section" id="hero-section">
+			<div class="container">
+				<div class="hero-section__text">
+					<h2 class="hero-section__text--subtitle">Інтернет-магазин</h2>
+					<h1 class="hero-section__text--title">"КАНЗАШІ"</h1>
+				</div>
+				<button class="hero-section__button button modal-btn-open" type="button">
+					Замовити товар
+				</button>
+			</div>
+		</section>
+
+		<!-- Банти -->
+		<section class="bant-section">
+			<div class="container">
+				<div class="bant-section__menu">
+					<!-- Назва -->
+					<h3 class="bant-section__title" id="bant">Банти</h3>
+
+					<!-- Button open mobile window -->
+					<button class="cart-btn" id="open-mobile-btn">
+						<svg width="16" height="16">
+							<use class="icon" href="./images/cart.svg#icon-cart"></use>
+						</svg>
+					</button>
+					<!--// Button open mobile window -->
+
+				</div>
+
+				<div class="counter__container mb-5">
+
+					<div class="row">
+						<!-- Товари -->
+						<div class="col-md-8">
+							<div class="row" id="products-container">
+
+							</div>
+						</div>
+						<!--// Товари -->
+
+						<!-- Mobile window -->
+						<div class="mobile" id="my-mobile">
+							<div class="mobile__box">
+
+								<!-- Button close mobile window -->
+								<button class="mobile__close-btn" id="close-my-mobile-btn">
+									<svg width="16" height="16">
+										<use href="./images/close.svg#icon-cross"></use>
+									</svg>
+								</button>
+								<!--// Button close mobile window -->
+								<!-- Ковшик  -->
+								<div class="col-md-4">
+									<div class="card mb-4">
+										<div class="card-body">
+
+											<h4 class="card-title">Ваш товар</h4>
+
+											<div data-cart-empty class="alert alert-secondary" role="alert">
+												Ковшик пустий
+											</div>
+
+											<!-- cart-wrapper -->
+											<div class="cart-wrapper">
+
+											</div>
+											<!-- // cart-wrapper -->
+
+											<!-- Вартість заказа -->
+											<div class="cart-total">
+												<p data-cart-delivery class="none">
+													<span class="h5">Доставка:</span>
+												</p>
+												<p><span class="h5">Разом:</span>
+													<span class="total-price">0</span>
+													<span class="hryvnia">₴</span>
+												</p>
+											</div>
+											<!-- // Вартість заказа -->
+
+										</div>
+
+										<!-- Оформити замовлення -->
+										<div id="order-form" class="card-body border-top">
+											<h5 class="card-title">Оформити замовлення</h5>
+											<form>
+												<div class="form-group">
+													<label for="user-tel"></label>
+													<input class="form-control" type="tel" name="user-tel" id="user-tel"
+														placeholder="Телефон" pattern="^\+[0-9]{12}" required />
+												</div>
+												<button type="submit" class="btn btn-primary">Замовити</button>
+											</form>
+										</div>
+										<!-- // Оформити замовлення -->
+
+									</div>
+								</div>
+								<!--// Ковшик -->
+
+							</div>
+						</div>
+						<!--// Mobile window -->
+
+					</div>
+
+				</div>
+
+
+			</div>
+		</section>
+
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__container">
+				<nav class="footer__nav">
+					<ul class="footer__menu">
+						<li>
+							<a class="link" href="index.html#traditions">Що таке канзаші?</a>
+						</li>
+						<li><a class="link" href="index.html#correctly">Як правильно носити?</a>
+						</li>
+						<li><a class="link" href="index.html#manufacture">З чого мають виготовляти?</a>
+						</li>
+						<li><a class="link" href="index.html#kanzashi">Якими бувають канзаші?</a>
+						</li>
+						<li><a class="link" href="index.html#masterclass">Майстер клас</a>
+						</li>
+					</ul>
+				</nav>
+				<address class="footer__address">
+					<div class="footer__contacts">
+						<div class="footer__address-list">
+							<p class="footer__addres-title">Контакти</p>
+							<ul class="footer__address-item">
+								<li>
+									<p>email:</p>
+								</li>
+								<li>
+									<a class="footer__address-link" href="mailto:logachev761@gmail.com"> logachev761@gmail.com
+									</a>
+								</li>
+							</ul>
+							<ul class="footer__address-item">
+								<li>
+									<p>tel:</p>
+								</li>
+								<li>
+									<a class="footer__address-link" href="tel:+380634905091"> + 38 (063) 490 50 91
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__socials">
+							<p class="footer__addres-title">Соцмережі</p>
+							<a href="#">
+								<svg class="footer__socials-icon" width="28" height="28">
+									<use href="./images/symbol-defs.svg#icon-telegram-color"></use>
+								</svg>
+							</a>
+							<a href="#">
+								<svg class="footer__socials-icon" width="28" height="28">
+									<use href="./images/symbol-defs.svg#icon-facebook-color"></use>
+								</svg>
+							</a>
+							<a href="#">
+								<svg class="footer__socials-icon" width="28" height="28">
+									<use href="./images/symbol-defs.svg#icon-instagram-color"></use>
+								</svg>
+							</a>
+							<p class="footer__address-copyright">&copy; 2023 рік</p>
+						</div>
+					</div>
+				</address>
+			</div>
+		</div>
+	</footer>
+	</div>
+
+	<!-- Modal window -->
+	<div class="backdrop is-hidden">
+		<div class="modal">
+			<button class="modal__btn-close modal-btn-close" type="button">
+				<svg width="24" height="24">
+					<use href="./images/icons.svg#icon-close"></use>
+				</svg>
+			</button>
+			<h3 class="modal__title">Замовити товар</h3>
+			<p class="modal__text">
+				Залишіть заявку та ми обов'язково зв'яжемся з Вами!
+			</p>
+			<form name="modal-form" method="post" autocomplete="off" netlify>
+				<div class="modal__form-field input">
+					<label class="input__label visually-hidden" for="user-name">
+						Імʼя
+					</label>
+					<input class="input__control" type="text" name="user-name" id="user-name" placeholder="Імʼя" required />
+				</div>
+
+				<div class="modal__form-field input">
+					<label class="input__label visually-hidden" for="user-tel">
+						Телефон
+					</label>
+					<input class="input__control" type="tel" name="user-tel" id="user-tel" placeholder="Телефон"
+						pattern="^\+[0-9]{12}" required />
+				</div>
+
+				<div class="modal__form-field input">
+					<label class="input__label visually-hidden" for="user-email">
+						Електронна пошта
+					</label>
+					<input class="input__control" type="email" name="user-email" id="user-email"
+						placeholder="Електронна пошта" required />
+				</div>
+
+				<button class="modal__button button" type="submit">
+					Замовити товар
+				</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Подключаем скрипты -->
+
+	<script src="./js/renderProducts.js"></script>
+	<script src="./js/calcCartPrice.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter-02.js"></script>
+	<script src="./js/cart-02.js"></script>
+
+	<script src="./js/modal.js"></script>
+	<script src="./js/modaljs.js"></script>
+	<script src="./js/script.js"></script>
+
+	<script src="https://kit.fontawesome.com/3d0e27e432.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- <script src="./js/js.js"></script> -->
+
+
+
+</body>
+
+</html>

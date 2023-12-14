@@ -1,0 +1,94 @@
+.footer {
+	background-image: url('/images/fon_footer.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	text-align: center;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		background-color: var(--color-primary-clear);
+		justify-content: space-around;
+		gap: clamp(16px, 5vw, 48px);
+		padding-top: 8px;
+	}
+
+	&__address {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	&__addres-title {
+		margin-bottom: 16px;
+		color: var(--color-primary-dark);
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(10px, 8vw, 100px);
+	}
+
+	&__address-copyright {
+		margin-top: 16px;
+	}
+
+	&__address-item {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	&__address-link {
+		color: var(--color-primary-dark);
+	}
+
+	&__address-link:hover {
+		color: var(--color-primary-normal);
+	}
+
+	&__address-item--tel {
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+	}
+
+	&__socials-icon {
+		margin-right: 22px;
+		background-color: var(--color-primary-normal);
+	}
+
+	@media screen and (min-width: $br--tablet) {
+		& {
+			max-height: 180px;
+			text-align: left;
+		}
+
+		&__container {
+			flex-direction: row;
+			padding-top: 16px;
+		}
+
+		&__contacts {
+			flex-direction: row;
+
+		}
+
+
+		&__address {
+			flex-direction: row;
+		}
+
+		&__address-item {
+			flex-direction: row;
+			gap: 30px;
+		}
+
+		&__address-item--tel {
+			flex-direction: row;
+			gap: 54px;
+		}
+	}
+}

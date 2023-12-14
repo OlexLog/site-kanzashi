@@ -1,0 +1,40 @@
+.header-section {
+	& {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 0;
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+
+
+	&__menu {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(10px, 4vw, 50px);
+
+
+	}
+
+	
+	@media screen and (min-width: $br--tablet) {
+		& {
+			padding: 24px 0;
+		}
+
+		&__menu {
+			flex-direction: row;
+
+		}
+
+		
+	}
+
+}

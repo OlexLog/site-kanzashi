@@ -1,0 +1,184 @@
+::selection {
+	color: var(--color-primary-normal);
+	background: var(--color-secondary-btn);
+}
+
+.bant-section {
+	padding-top: clamp(10px, 3vw, 40px);
+	padding-bottom: clamp(10px, 3vw, 40px);
+	background: linear-gradient(to right, #88bfe8 0%, #70b0e0 100%);
+
+	&__title {
+		font-size: clamp(24px, 4vw, 64px);
+		margin-bottom: clamp(10px, 4vw, 40px);
+		text-shadow: 6px -3px 2px var(--color-primary-normal);
+	}
+
+	&__container {
+		display: flex;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+	}
+
+}
+
+
+
+.card__container {
+	display: flex;
+	gap: clamp(20px, 4vw, 40px);
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 50px;
+
+}
+
+.wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+
+}
+
+.wrapper .cart-nav {
+	position: absolute;
+	right: 24px;
+	top: 0;
+	width: clamp(160px, 50%, 180px);
+	background: var(--color-primary-normal);
+	padding: 13px 15px;
+	border-radius: 3px;
+	display: flex;
+	cursor: pointer;
+	justify-content: space-around;
+	box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.cart-nav .icon {
+	color: var(--color-primary-dark);
+	
+}
+
+.cart-nav .icon i {
+	font-size: 14px;
+}
+
+.cart-nav .icon span {
+	font-weight: 500;
+}
+
+.cart-nav .item-count {
+	font-size: 15px;
+	height: 23px;
+	width: 23px;
+	color: var(--color-primary-normal);
+	background: var(--color-primary-dark);
+	text-align: center;
+	line-height: 24px;
+	border-radius: 50%;
+}
+
+.wrapper .card {
+	position: relative;
+	background: var(--color-primary-normal);
+	border-radius: 16px;
+	width: 300px;
+	height: clamp(150px, 50%, 250px);
+	overflow: hidden;
+	box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper .card img {
+	width: 100%;
+	border-radius: 32px;
+	transition: all 0.3s ease;
+	margin-inline: auto;
+	padding: 16px;
+}
+
+.card:hover img {
+	transform: scale(1.1);
+}
+
+.wrapper .card .content {
+	position: absolute;
+	width: 100%;
+	bottom: -150%;
+	background: var(--color-primary-normal);
+	padding: 10px 20px 22px 20px;
+	box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.15);
+	transition: all 0.5s ease;
+}
+
+.wrapper .card:hover .content {
+	bottom: 0;
+}
+
+.card .content .row,
+.content .buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content .row .details span {
+	margin-bottom: 10px;
+	display: block;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.content .row .details p {
+	color: #333;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.content .row .price {
+	color: var(--color-primary-dark);
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.content .buttons {
+	margin-top: 20px;
+}
+
+.content .buttons button {
+	width: 100%;
+	padding: 9px 0;
+	outline: none;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 3px;
+	border: 1px solid var(--color-primary-dark);
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+}
+
+.buttons button:first-child {
+	color: var(--color-primary-dark);
+	margin-right: 10px;
+	background: var(--color-primary-normal);
+}
+
+button:first-child:hover {
+	color: var(--color-primary-normal);
+	background: var(--color-secondary-btn);
+}
+
+.buttons button:last-child {
+	color: var(--color-primary-normal);
+	margin-left: 10px;
+	background: var(--color-secondary-btn);
+}
+
+button:last-child:hover {
+	background: transparent;
+	border-color: transparent;
+	border: 1px solid var(--color-primary-dark);
+	color: var(--color-primary-dark);
+}

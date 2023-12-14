@@ -1,0 +1,78 @@
+.masterclass {
+	padding-top: clamp(10px, 3vw, 40px);
+	padding-bottom: clamp(10px, 3vw, 40px);
+	background-color: var(--color-fon-masterclass);
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: clamp(14px, 4vw, 40px);
+		margin-bottom: clamp(10px, 3vw, 40px);
+	}
+
+	&__subtitle {
+		text-align: left;
+		font-size: clamp(14px, 4vw, 36px);
+		margin-bottom: clamp(10px, 3vw, 40px);
+	}
+
+	&__text--descr {
+		text-align: justify;
+		margin-bottom: clamp(10px, 3vw, 40px);
+		overflow-y: scroll;
+		height: 200px;
+		font-size: clamp(12px, 2vw, 14px);
+	}
+
+	&__subtitle--text {
+		text-align: center;
+		font-size: clamp(14px, 4vw, 36px);
+		margin-bottom: clamp(10px, 3vw, 40px);
+	}
+
+	&__item {
+		display: flex;
+		gap: 24px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__item--descr {
+		text-align: justify;
+		padding-left: clamp(5px, 3vw, 80px);
+		padding-right: clamp(5px, 3vw, 80px);
+		overflow-y: scroll;
+		height: 200px;
+		font-size: clamp(12px, 2vw, 14px);
+	}
+
+	&__image {
+		border-radius: 16px;
+	}
+
+	@media screen and (min-width: $br--tablet) {
+
+		&__item--descr {
+			overflow-y: hidden;
+			height: auto;
+		}
+
+		&__text--descr {
+			overflow-y: hidden;
+			height: auto;
+		}
+
+	}
+
+	@media screen and (min-width: $br--smalldesktop) {
+		&__item {
+			flex-direction: row-reverse;
+			gap: 48px;
+
+		}
+	}
+}

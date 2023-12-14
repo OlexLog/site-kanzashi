@@ -1,0 +1,82 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	background-color: var(--color-secondary-light);
+	transition: opacity 0.7s, visibility 0.7s;
+
+	&.is-hidden {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+}
+
+.modal {
+	& {
+		position: relative;
+		width: 100%;
+		max-width: 880px;
+		height: 100%;
+		max-height: 420px;
+		padding: clamp(16px, 10vw, 128px);
+		background-color: var(--color-secondary-modal);
+		border-radius: 32px;
+		overflow-y: auto;
+
+		&__btn-close {
+			position: absolute;
+			top: clamp(15px, 6vw, 40px);
+			right: clamp(15px, 6vw, 40px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			fill: transparent;
+			stroke: var(--color-secondary-dark);
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+		}
+
+		&__title {
+			color: var(--color-secondary-normal);
+			margin-bottom: 8px;
+			font-size: clamp(20px, 5vw, 64px);
+			font-weight: 600;
+			text-align: center;
+		}
+
+		&__text {
+			color: var(--color-secondary-normal);
+			margin-bottom: clamp(20px, 6vw, 72px);
+			font-size: clamp(10px, 2vw, 14px);
+			text-align: center;
+
+		}
+
+		&__form-field {
+			margin-bottom: clamp(10px, 3vw, 32px);
+		}
+	}
+
+	@media screen and (min-width: $br--mobile) {
+		& {
+			max-height: 550px;
+
+		}
+	}
+
+	@media screen and (min-width: $br--tablet) {
+		& {
+			max-height: 880px;
+
+		}
+	}
+}
